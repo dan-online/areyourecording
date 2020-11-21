@@ -1,4 +1,4 @@
-![](icons/icon64.png)
+![](icons/icon128.png)
 
 # AreYouRecording
 
