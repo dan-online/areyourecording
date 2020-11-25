@@ -2,7 +2,9 @@
 
 # AreYouRecording
 
-A fairly simple chrome extension that reminds teachers to record their google meet
+A fairly simple chrome extension that reminds teachers to record their google meet with more functionality coming possibly in the future
+
+https://chrome.google.com/webstore/detail/areyourecording/inclbgdmhheebmihljedogpbfkaeeaci
 
 # Demo
 
