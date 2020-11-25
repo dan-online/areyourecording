@@ -14,8 +14,7 @@
     "persistent": true
   },
   "page_action": {
-    "default_icon": "icons/icon19.png",
-    "default_popup": "src/page_action/page_action.html"
+    "default_icon": "icons/icon19.png"
   },
   "permissions": [
     "https://meet.google.com/*,http://meet.google.com/*"
