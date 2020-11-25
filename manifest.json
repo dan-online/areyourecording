@@ -1,6 +1,6 @@
 {
   "name": "AreYouRecording",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "manifest_version": 2,
   "description": "Just a little notification to remind you to record your google meets, with some added options.",
   "icons": {
