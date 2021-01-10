@@ -37,7 +37,7 @@ chrome.extension.sendMessage({}, function (response) {
       console.log("Hello. This message was sent from scripts/inject.js");
 
       let i = setInterval(() => {
-        if (findText("Turn on captions")) {
+        if (findText("Present now")) {
           clearInterval(i);
           document
             .querySelector(
