@@ -1,5 +1,5 @@
 function findText(text) {
-  var aTags = document.getElementsByTagName("div");
+  var aTags = document.querySelectorAll("*");
   var searchText = text;
   var found = false;
 
@@ -39,17 +39,15 @@ chrome.extension.sendMessage({}, function (response) {
       let i = setInterval(() => {
         if (findText("Present now")) {
           clearInterval(i);
-          document
-            .querySelector(
-              '[d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"]'
-            )
-            .parentElement.parentElement.parentElement.click();
-          setTimeout(() => {
+          document.querySelector('[aria-label="More options"]').click();
+          let ii = setInterval(() => {
+            console.log("Record", findText("Record meeting"));
             if (findText("Record meeting") && !recording) {
+              clearInterval(ii);
               showAlert("Make sure you record your meeting!");
               recording = true;
             }
-          }, 10);
+          }, 500);
         }
       }, 1000);
     }
